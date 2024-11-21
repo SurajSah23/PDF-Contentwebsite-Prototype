@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Content Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PDF Content Viewer</h1>
+        </header>
+        
+        <main>
+            <div class="pdf-controls">
+                <button id="prev" class="nav-btn">Previous</button>
+                <span id="page-info">Page <span id="current-page">1</span> of <span id="total-pages">1</span></span>
+                <button id="next" class="nav-btn">Next</button>
+            </div>
+
+            <div id="scroll-container" class="pdf-scroll-container">
+            </div>
+        </main>
+        
+        <footer>
+            <p>PDF Content Viewer © 2024</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
